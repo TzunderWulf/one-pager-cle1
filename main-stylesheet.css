@@ -1,0 +1,150 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    font-family: 'Cario', serif;
+    font-size: 1.1em;
+}
+
+.container {
+    display: grid;
+
+    background-color: #ebe9e6;
+
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    text-align: center;
+
+    background-image: url(header.jpg);
+    background-size: cover;
+    background-position: center;
+
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+#main-title {
+    width: 700px;
+
+    margin: auto;
+    padding: 0 50px;
+
+    color: #ebe9e6;
+    background-color: #262626;
+
+    font-size: 2.5em;
+}
+
+/* nav elements */
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #262626;
+    color: #ebe9e6;
+
+    grid-area: 2 / 1 / 2 / 4;
+}
+
+.nav-div {
+    padding: 10px 0;
+
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+
+    font-family: 'Antic Slab', sans-serif;
+    font-size: 1.5em;
+
+    flex-grow: 1;
+}
+
+.nav-div:hover {
+    background-color: #4f4f4f;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 30px;
+
+    grid-area: 3 / 2 / 3 / span 1;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.title {
+    font-family: 'Antic Slab', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#showcase-video {
+    width: 100%;
+    height: 25vw;
+}
+
+#our-mission-section {
+    line-height: 0.5em;
+
+    text-align: center;
+    padding: 20px;
+
+    background-color: #A7C4C2;
+
+    font-size: 1.2em;
+}
+
+#showcase-images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 30px;
+}
+
+.showcase-image {
+    left: -30px;
+
+    width: 100%;
+    height: 100%;
+
+    flex-grow: 1;
+}
+
+#sub-text {
+    font-size: 0.9em;
+}
+
+#our-team-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#team-text {
+    padding: 0 0 0 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px 0;
+
+    background-color: #262626;
+    color: white;
+
+    grid-area: 4 / 1 / 4 / 4;
+}
