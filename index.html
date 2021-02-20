@@ -2,108 +2,115 @@
 <html lang="nl">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Solve Sense</title>
-    <link rel="stylesheet" href="main-stylesheet.css">
-    <!-- Google Fonts (Antic slab & Cairo) -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cairo:wght@700&display=swap"
-        rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
 </head>
 
-<body class="container">
+<body id="container">
     <header>
-        <div id="main-title">
-            <h1><em>Solve Sense</em></h1>
-        </div>
+        <h1 id="title-page">Solve Sense</h1>
     </header>
-    <nav class="main-nav">
-        <div id="information" class="nav-div">Solve Sense</div>
-        <div id="showcase" class="nav-div">Showcase</div>
-        <div id="our-mission" class="nav-div">Onze Missie</div>
-        <div id="images" class="nav-div">Afbeeldingen</div>
-        <div id="our-team" class="nav-div">Ons Team</div>
+    <nav>
+        <div class="nav-btn" id="info-btn">Solve Sense</div>
+        <div class="nav-btn" id="showcase-btn">Showcase</div>
+        <div class="nav-btn" id="mission-btn">Onze Missie</div>
+        <div class="nav-btn" id="images-btn">Afbeeldingen</div>
+        <div class="nav-btn" id="team-btn">Ons Team</div>
     </nav>
-    <main class="content">
-        <section id="information-section">
-            <h2 class="title">Wat kan het?</h2>
+    <main id="content">
+        <!-- information section -->
+        <section id="info-sec">
+            <h1 class="title">De Solve Sense</h1>
+            <h2>Wat kan het?</h2>
             <p>
-                Het apparaat heeft vier knoppen aan één kant, die elk een niveau van hulp vertegenwoordigen. Om hulp
-                te vragen, drukken ze gewoon op de knop van het juiste niveau. Voor hem of haar zal het een timer
-                starten als visuele klok, op deze manier kan hij/zij zien hoeveel tijd er is voorbijgegaan. Naar u
-                zal het een bericht sturen met een tijdstempel en kamernummer, zodat u uw hulp kunt aanbieden.
+                Het apparaat heeft vier knoppen aan één kant, die elk een niveau van hulp vertegenwoordigen. Om hulp te
+                vragen, drukken ze gewoon op de knop van het juiste niveau. Voor hem of haar zal het een timer starten
+                als visuele klok, op deze manier kan hij/zij zien hoeveel tijd er is voorbijgegaan. Naar u zal het een
+                bericht sturen met een tijdstempel en kamernummer, zodat u uw hulp kunt aanbieden.
             </p>
             <p>
-                Voor uitleg hoeft u zich ook geen zorgen over te maken, deze zit op de achterkant van het product.
-                Op deze manier hoeven er geen losse blaadjes te worden gebruikt, die eventueel kwijt kunnen raken of
-                kapot gaan.
+                Voor uitleg hoeft u zich ook geen zorgen over te maken, deze zit op de achterkant van het product. Op
+                deze manier hoeven er geen losse blaadjes te worden gebruikt, die eventueel kwijt kunnen raken of kapot
+                gaan.
             </p>
-            <h2 class="title">Maar welk probleem lost het op?</h2>
+            <h2>Maar welk probleem lost het op?</h2>
             <p>
                 De Solve Sense kan duidelijkheid scheppen in die wolk van obscuriteit. Het geeft uw patiënten de
                 mogelijkheid om aan u te laten zien wanneer ze uw hulp nodig hebben of vragen hebben. Hopelijk kan
                 hierdoor elke patiënt om hulp vragen wanneer hij/zij die nodig heeft.
             </p>
         </section>
-        <section id="showcase-section">
-            <iframe id="showcase-video"
-                src="https://www.youtube.com/embed/-GyDwyygg84?rel=0;&autoplay=1&mute=1&loop=1&playlist=-GyDwyygg84"></iframe>
+        <!-- video section -->
+        <section id="showcase-sec">
+            <iframe src="https://www.youtube-nocookie.com/embed/-GyDwyygg84" allowfullscreen>
+            </iframe>
         </section>
-        <section id="our-mission-section">
-            <h2 class="title">Onze Missie</h2>
-            <p>Wij willen ervoor zorgen dat jouw patiënten de hulp kunnen krijgen,</p>
-            <p>wanneer zij die nodig hebben.</p>
+        <!-- our mission section -->
+        <section id="mission-sec">
+            <h1 class="title">Onze Missie</h1>
+            <h2>
+                Wij willen ervoor zorgen dat jouw patiënten de hulp kunnen krijgen, wanneer zij die nodig hebben.
+            </h2>
         </section>
-        <section id="images-section">
-            <div id="showcase-images">
-                <a class="showcase-link" href="images/slideshow_image1.JPG" target="_blank">
-                    <img class="showcase-image" src="images/slideshow_image1.JPG" alt="preview image 1" />
-                </a>
-                <a class="showcase-link" href="images/slideshow_image2.JPG" target="_blank">
-                    <img class="showcase-image" src="images/slideshow_image2.JPG" alt="preview image 2" />
-                </a>
-                <a class="showcase-link" href="images/slideshow_image3.JPG" target="_blank">
-                    <img class="showcase-image" src="images/slideshow_image3.JPG" alt="preview image 3" />
-                </a>
+        <!-- showcase section -->
+        <section id="images-sec">
+            <div id="flex-images">
+            <a class="showcase-image" href="images/slideshow_image1.JPG">
+                <img src="images/slideshow_image1.JPG" alt="Solve Sense in het gras">
+            </a>
+            <a class="showcase-image" href="images/slideshow_image2.JPG">
+                <img src="images/slideshow_image2.JPG" alt="Solve Sense in het gras">
+            </a>
+            <a class="showcase-image" href="images/slideshow_image3.JPG">
+                <img src="images/slideshow_image3.JPG" alt="Solve Sense met in de achtergrond bosjes">
+            </a>
             </div>
-            <p id="sub-text"><em>Klik op de afbeeldingen voor een vergrootte versie (nieuw tabblad wordt geopend).</em>
-            </p>
+            <p><em>Klik op een van de afbeeldingen, voor een vergrootte versie (opent in een nieuw tab).</em></p>
         </section>
-        <section id="our-team-section">
-            <div id="team-logo">
-                <img src="images/bbt.png" alt="Logo big brain tech.">
-            </div>
-            <div id="team-text">
-                <h2 class="title">Ons Team</h2>
+        <!-- our team section -->
+        <section id="team-sec">
+            <div>
+                <h1>Ons team</h1>
                 <p>
-                    Big Brain Technologies is een bedrijf dat probeert het leven voor iedereen comfortabeler
-                    en aangenamer te maken. Ons team, bestaande uit één enthousiaste student, is verheugd om
-                    producten op de markt te brengen die zijn ontworpen voor mensen. We plaatsen onze hardware
-                    en software op hetzelfde niveau als bruikbaarheid van het product voor onze doelgroep.
+                    Big Brain Technologies is een bedrijf dat probeert het leven voor iedereen comfortabeler en
+                    aangenamer
+                    te maken. Ons team, bestaande uit één enthousiaste student, is verheugd om producten op de markt te
+                    brengen die zijn ontworpen voor mensen. We plaatsen onze hardware en software op hetzelfde niveau
+                    als
+                    bruikbaarheid van het product voor onze doelgroep.
                 </p>
             </div>
+            <div>
+                <img id="logo" src="images/bbt.png" alt="Logo Big Brain Technologies">
+            </div>
         </section>
+        <div id="to-top">
+            <button id="to-top-btn">Terug naar boven</button>
+        </div>
     </main>
     <footer>
-        <div>
+        <div class="footer-item">
             <p>© Copyright 2020 Big Brain Tech.</p>
-            <p>Gemaakt door Sara van den Bos (1006859)</p>
+            <p>Gemaakt door Sara van den Bos</p>
+            <a id="attribution" href="https://www.iconfinder.com/iconsets/social-media-hexagon-design">Used
+                Iconset</a>
         </div>
-        <div>
-            <a href="https://twitter.com/TzunderWulf" target="_blank">
-                <img src="images/twitter_48.png" alt="twitter" />
+        <div class="footer-item">
+            <a href="https://twitter.com/TzunderWulf">
+                <img class="social-img" src="images/twitter_48.png" alt="Twitter logo">
             </a>
-            <a href="https://instagram.com/TzunderWulf" target="_blank">
-                <img src="images/instagram_48.png" alt="instagram" />
+            <a href="https://instagram.com/TzunderWulf">
+                <img class="social-img" src="images/instagram_48.png" alt="Instagram logo">
             </a>
-            <a href="https://github.com/TzunderWulf" target="_blank">
-                <img src="images/github_48.png" alt="github" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCNeUuHRrlEDx50_bg7PgQ_w" target="_blank">
-                <img src="images/youtube_48.png" alt="youtube" />
+            <a href="https://github.com/TzunderWulf">
+                <img class="social-img" src="images/github_48.png" alt="Github logo">
             </a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
